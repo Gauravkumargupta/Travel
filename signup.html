@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+input[type=text],  input[type=email],  input[type=password], input[type=mobile], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 5%;
+    border-radius: 10%;
+}
+
+</style>
+<body>
+<center><h1><font color="red"> Travel The Best Agency Pvt. Ltd.</font></h2></center>
+
+<center><h2>Sign Up</h2></center>
+
+<form method="post" action="sign.php">
+  <div class="imgcontainer">
+    <img src="images/avatar2.png" alt="Avatar" class="avatar">
+  </div>
+<center>
+    <div>
+  <form class="form-inline" method="post" action="sign.php">
+    
+    <label for="name">Username</label>
+    <input type="text"  name="name" placeholder="Your username.." required>
+    <br>
+    <label for="email">Email-Id&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="email"  name="email" placeholder="Your Email-Id.." required>
+    <br>
+    <label for="password">Password&nbsp;</label>
+    <input type="password" name="password" placeholder="Enter Password.." required>
+    <br>
+
+    <label for="mobile">Mobile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="mobile"  name="mobile" placeholder="Your Mobile No..." required>
+    <br>
+    <br>
+    <br>
+
+     <input type="submit" class="btn btn-danger btn-lg active" value="Sign Up" name="submit" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="reset" class="btn btn-success">Reset</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class="btn btn-primary btn-lg active" role="button">Go to HomePage</a>
+
+     </div>
+
+  </center>
+  
+</form>
+
+</body>
+</html>

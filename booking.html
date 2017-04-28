@@ -1,0 +1,142 @@
+<html>
+<head>
+        <title>BOOKING</title>
+  
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        
+    </head>
+
+  
+ <body background="images/QbNuncA.jpg">
+<center><marquee scrollamount="20
+  "><h1><font color="yellow">Welcome to Travel the Best Agency Pvt. Ltd.</font></h1></marquee></center>
+<center><h1><font color= #E94f64>Booking </font></h1></center>
+<br>
+<br>
+
+<center>
+<form class="form-inline" method="post" action="booking.php">
+  <div class="form-group">
+    <label for="exampleInputName2">&nbsp;&nbsp;&nbsp;&nbsp;<font color=#E94f64>Name*</font></label>
+    <input type="text" class="form-control" id="exampleInputName1" name="name" placeholder="Gaurav Kumar Gupta" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#E94f64>Email*</font></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="gkg12@example.com" required >
+  </div>
+  <br>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputCode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#E94f64>Code*</font></label>
+    <input type="code" class="form-control" id="exampleInputContact1" name="code" placeholder="+91" required >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputContact1"><font color=#E94f64>Contact*</font></label>
+    <input type="number" class="form-control" id="exampleInputContact1" name="contact" placeholder="9170782339" required>
+  </div>
+  <br>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputStreet1"><font color=#E94f64>Address*</font></label>
+    <input type="street" class="form-control" id="exampleInputStreet1" name="address" placeholder="xyz" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputCity1"><font color=#E94f64>Country*</font></label>
+    <input type="city" class="form-control" id="exampleInputCity1" name="country" placeholder="abc" required>
+  </div>
+  <br>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputCity1"><font color=#E94f64><h4>Details*</h4></font></label>
+    <div class="grid">
+    <div class="col-1-4 col-1-4-sm">
+      <div class="controls">
+        <label for="arrive" class="label-date"><i class="fa fa-calendar"></i><font color=#E94f64>Arrive*</font></label>
+        <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>" required >
+        
+      
+        <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#E94f64>Depart*</font></label>
+        <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" / required>
+        
+      </div>      
+    </div>
+      <br>
+
+    <div class="form-group">
+    <label for="exampleInputPeople1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#E94f64>Adults*</font></label>
+    <select class="form-control" name="adult" required>
+      <option></option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select>
+
+<label for="exampleInputChild1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#E94f64>Child*</font></label>
+    <select class="form-control" name="child" required>
+      <option></option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  
+</select>
+
+<label for="exampleInputRoom1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=#E94f64>Rooms*</font></label>
+    <select class="form-control" name="room" required >
+      <option></option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  
+</select>
+  </div>
+  <br>
+  <br>
+  <div class="grid">
+        <p class="info-text"><font color=#E94f64><b>Please describe your needs e.g. Extra beds, children's cots</b><font></p>
+        
+        <div class="controls" required>
+          <label for="comments">Comments*</label>
+          <input type="text" name="comment" class="floatLabel"  id="comments" >
+        
+          </div> 
+  </div>
+
+
+
+   <div class="form-group">
+    <b><span class="text-muted"><em><span style="color:red;">*</span> Indicates required fields are mandatory</em></span></b>
+  </div> 
+  
+
+  <br>
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="btn btn-success btn-lg active" value="Book Your Trip" name="submit" >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <button type="reset" class="btn btn-danger">Reset</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class="btn btn-primary btn-lg active" role="button">Go to HomePage</a>         
+  
+</form>
+</center>
+</body>
+</html>
